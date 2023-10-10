@@ -202,24 +202,38 @@ main img {
     font-weight: bold;
     color: var(--cor5);
  }
- section > legend {   
+ section legend {   
     font-style: italic;
-    font-size: 2em;
-    margin-bottom: 2em;
-}
-section >  label {
-    display: block;
-    margin-bottom: 0.5em;
     font-size: 1.5em;
+    margin-bottom: 1em;
+}
+section label {
+    display: block;
+    margin-bottom: 0px;
 }
  input, textarea {
-    width: 58em;
+    width: 50%;
     border: var(--cor4);
     background: white;
     padding: 8px;
     margin-top: 5px;
     font-size: 1em;
     outline: none;
+}
+button {
+    border: 0.2em solid var(--cor1);
+    border-radius: 5px;
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+button:hover {
+    border: 0.2em solid var(--cor4);
+    background: var(--cor0);
+    color: var(--cor4); 
 }
 footer {
     background-color: var(--cor5);
