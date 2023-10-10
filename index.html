@@ -8,9 +8,10 @@
     <title>Ler Até Amanhecer - Fã-clube</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/media-query.css">
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Ler Até Amanhecer</h1>
         <p>"Explorando o Canal de Crimes, Séries Documentais e Sobrenatural com Joici Rodrigues"</p>
@@ -218,6 +219,14 @@
                 Amanhecer</a></p>
     </footer>
     <script>
+        
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block';
+            }else {
+                itens.style.display = 'none'
+            }
+        }
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none';
