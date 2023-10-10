@@ -202,7 +202,8 @@ main img {
     font-weight: bold;
     color: var(--cor5);
  }
- section legend {   
+ section legend { 
+    padding: 5px;  
     font-style: italic;
     font-size: 1.5em;
     margin-bottom: 1em;
