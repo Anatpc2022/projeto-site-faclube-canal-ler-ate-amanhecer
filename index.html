@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/olho-icon.ico" type="image/x-icon">
     <title>Ler Até Amanhecer - Fã-clube</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/index.css">
 </head>
 
@@ -14,13 +15,16 @@
         <h1>Ler Até Amanhecer</h1>
         <p>"Explorando o Canal de Crimes, Séries Documentais e Sobrenatural com Joici Rodrigues"</p>
     </header>
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#segundas">Segundas</a>
-        <a href="#quartas">Quartas</a>
-        <a href="#sextas">Sextas</a>
-        <a href="#extra">Extra</a>
-    </nav>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <menu id="itens">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#segundas">Segundas</a></li>
+            <li><a href="#quartas">Quartas</a></li>
+            <li><a href="#sextas">Sextas</a></li>
+            <li><a href="#extra">Extra</a></li>
+        </ul>
+    </menu>
     <main>
         <article>
             <h1 id="inicio">Um Canal que vale a pena explorar o conteúdo...</h1>
@@ -176,46 +180,52 @@
                 envolventes relacionados ao terror literário. Até a próxima!
             </p>
         </article>
-        <form action="">
+        <section>
             <div>
                 <fieldset>
-                    <legend>Preencha o Formulário</legend>
-                    <p>
-                        <label for="inome">Nome: </label>
-                        <input type="text" name="nome" id="inome" required minlength="5" maxlength="50"
-                            autocomplete="username" placeholder="Digite seu nome">
-                    </p>
-                    <p>
-                        <label for="iidade">Idade: </label>
-                        <input type="number" name="idade" id="iidade" min="0" max="130" required
-                            placeholder="Digite sua idade" size="30">
-                    </p>
+                    <legend>Deixe um comentário</legend>
 
-                    <p>
-                        <label for="nota">O que você acha do Canal?</label> <br>
-                        <input type="radio" name="nota" id="inruim" value="Ruim"> <label for="inruim">Ruim</label>
-                        <input type="radio" name="nota" id="inbom" value="Bom"> <label for="inbom">Bom</label>
-                        <input type="radio" name="nota" id="inotimo" value="Otimo"> <label for="inotimo">Ótimo</label>
-                    </p>
-                    <p>
-                        <label for="imsg">Conte o porque você escolheu a opção acima</label> <br>
-                        <textarea name="msg" id="imsg" cols="30" rows="10">Mensagem</textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
-                    </p>
+                    <div>
+                        <label for="first-name">Nome: </label>
+                        <input class="form-group" type="text" name="first-name" id="first-name" placeholder="Seu nome">
+                    </div>
 
+                    <div> 
+                        <label for="last-name">Sobrenome: </label>
+                        <input class="form-group" type="text" name="last-name" id="last-name" placeholder="Seu sobrenome">
+                    </div>
+
+                    <div >
+                        <label for="email">E-mail: </label>
+                        <input class="form-group" type="email" name="email" id="email" placeholder="Seu e-mail">
+                    </div>
+
+                    <div>
+                        <label for="message">Mensagem: </label><br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                    </div>
+
+                    <div>
+                       <button type="submit">Enviar mensagem</button> 
+                    </div>
                 </fieldset>
-
             </div>
-        </form>
+        </section>
     </main>
     <footer>
         <p>Site criado por <a href="https://www.linkedin.com/in/ana-cl%C3%A1udia-silva-641b87232" target="_blank">Ana
                 Cláudia</a> sobre o Canal <a href="https://www.lerateamanhecer.com/" target="_blank">Ler Até
                 Amanhecer</a></p>
     </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none';
+            }else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 
 </html>
