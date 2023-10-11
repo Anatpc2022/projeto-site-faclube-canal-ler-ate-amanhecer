@@ -4,6 +4,9 @@
     i#burguer {
         display: none;
     }
+    menu {
+        text-align: left;
+    }
     menu > ul > li {
         display: inline-block;
         
