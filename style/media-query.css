@@ -13,4 +13,13 @@
         display: inline-block;
         
     }
+    div.campo {
+        width: 99%; 
+    }
+    div.campo > input {
+        width: 99%;
+    }
+    div.campo > textarea {
+        width: 99%;
+    }
 }

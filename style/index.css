@@ -125,6 +125,7 @@ main h3 {
     font-weight: normal;
 
 }
+
 main p {
     margin: 15px 0px; 
     text-align: justify;
@@ -189,53 +190,57 @@ main img {
     list-style-position: inside;
     columns: 2;
  }
- section {
-    margin: auto;
-    background-color: #f0b4b0dc;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.308);
- }
- section div {
-    box-sizing: border-box;
-    padding: 10px;
-    font-weight: bold;
-    color: var(--cor5);
- }
- section legend { 
-    padding: 5px;  
-    font-style: italic;
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-section label {
-    display: block;
-    margin-bottom: 0px;
-}
- input, textarea {
-    width: 50%;
-    border: var(--cor4);
-    background: white;
-    padding: 8px;
-    margin-top: 5px;
-    font-size: 1em;
-    outline: none;
-}
-button {
-    border: 0.2em solid var(--cor1);
-    border-radius: 5px;
+ fieldset > p {
+    text-align: center;
+    font-weight: bolder;
     background-color: var(--cor2);
     color: white;
-    padding: 10px;
+    padding: 5px;
+    margin: 0px;
+}
+ div.campo {
+    background-color: var(--cor0);
+    display: block;
+    width: 98%;    
+    border-radius: 2px;
+    padding: 5px;
+}
+div.campo > label {
+    color: var(--cor5);
+}
+div.campo > input {
+    background-color: white;
     font-size: 1em;
+    width: 98%; 
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+}
+div.campo > textarea {
+    background-color: white;
+    font-size: 1em;
+    width: 98%; 
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+}
+ button.botao {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor2);
+    color: white;
+    border: none;
     cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
-button:hover {
-    border: 0.2em solid var(--cor4);
-    background: var(--cor0);
-    color: var(--cor4); 
-}
+ }
+ button.botao:hover {
+    background-color: var(--cor3);
+    text-shadow: 2px 2px 1px black;
+ }
+
 footer {
     background-color: var(--cor5);
     color: white;
